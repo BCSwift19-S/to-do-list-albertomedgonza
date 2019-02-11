@@ -20,10 +20,11 @@ class DetailViewController: UIViewController {
 
         if let toDoItem = toDoItem{
             toDoField.text = toDoItem
+            self.navigationItem.title = "Edit To Do"
         }
         if let toDoNoteItem = toDoNoteItem {
             toDoNoteView.text = toDoNoteItem
-            
+            self.navigationItem.title = "New To Do Item"
         }
     
         enableDesableSaveButton()
